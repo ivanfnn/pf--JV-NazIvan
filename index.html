@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async defer  src="./JS/main.js"></script>
+    
     <link rel="stylesheet" href="./css/style.css">
-    <title>Logica en Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>TRABAJO PRACTICO JS</title>
 </head>
 <body>
         <h1>Breve introduccion sobre el proyecto</h1>
@@ -13,6 +14,59 @@
         <p>En el proyecto trate de hacer es un programa para que el usuario pueda cargar las tareas que debe realizar, esta pensado para que lo usen 
             por ejemplo personal de deposito en un empresa u otros sectores dentro de la empresa. para que cada persona se cree su usuario y cargue todas las tareas que realizo o debe realizar.
         </p>
+        <div class="task-card">
+            <h3>Formulario de Registro</h3>
+            <form id="registrationForm">
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="name" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="lastname" name="apellido" required>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        
+
+        <div class="task-card">
+            <h3>Nueva Tarea</h3>
+            <form id="addtask">
+              <div class="form-group">
+                <label for="nombre">Nombre de la tarea:</label>
+                <input type="text" id="NameTask" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="Task">Tarea:</label>
+                <input type="text" id="newtask" name="task" required>
+              </div>
+              <button type="submit">Agregar</button>
+            </form>
+        </div>
+
+        <button id="ordenar">ordenar cards por nombre</button>
+
+        <div class="task-card">
+            <h3>Tarea 1</h3>
+            <p>Descripción de la tarea 1</p>
+            <button id="tareaRealizada"">Tarea realizada</button>
+          </div>
+          
+          <div class="task-card">
+            <h3>Tarea 2</h3>
+            <p>Descripción de la tarea 2</p>
+            <button id="tareaRealizada"">Tarea realizada</button>
+          </div>
+          
+        <div id="container"></div>
+
+
+
+        <script async defer  src="./JS/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     
 </body>
 </html>
