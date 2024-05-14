@@ -126,12 +126,3 @@ function cardGenerator (saveValueTask) {
     return div;
 }
 
-ordenar.addEventListener('click', (event) => {
-  event.preventDefault();
-  taskCont.innerHTML = '';
-  TaskList.sort((a, b) => a.nameTask - (b.nameTask));
-  TaskList.forEach((task) => {
-    const card = cardGenerator(task);
-    taskCont.appendChild(card);
-  });
-})
